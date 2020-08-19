@@ -30,7 +30,11 @@ export class AuthService {
         return !!this.token
     }
 
+<<<<<<< HEAD
     private setToken(response:FbAuthResponse) {
+=======
+    private setToken(response: FbAuthResponse) {
+>>>>>>> master
         console.log(response);
         
     }
