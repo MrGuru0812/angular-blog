@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
 import {HttpClient} from '@angular/common/http';
-import { User } from 'src/app/shared/interfaces';
+import { User, FbAuthResponse } from 'src/app/shared/interfaces';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import {tap} from 'rxjs/operators';
@@ -30,7 +30,7 @@ export class AuthService {
         return !!this.token
     }
 
-    private setToken(response) {
+    private setToken(response: FbAuthResponse) {
         console.log(response);
         
     }
